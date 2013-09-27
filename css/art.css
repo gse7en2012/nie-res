@@ -1,0 +1,49 @@
+@charset "gb2312";
+/*
+	官网文章页统一样式
+	注意：只能修改提供的属性,可自定义额外的样式
+*/
+@import url(http://res.nie.netease.com/comm/css/art.com.css);
+#NIE-art{font-size:14px;color:#222222; padding:35px 0;}
+/*标题*/#NIE-art .artTitle{font-size:24px;font-weight:bold;color:#222222;text-align:left}
+/*正文*/#NIE-art .artText{margin:0 auto;font-family:"\5B8B\4F53";}
+/* 正文段落  */#NIE-art .artText p{line-height:24px;margin:0 0 12px 0;text-indent: 0px;}
+/*一级标题*/#NIE-art .artText h2{padding-left: 12px;margin:0 0 14px 0;text-indent: 0px;}
+/*列表*/#NIE-art ul{margin: 12px 0 12px;}
+/*列表*/#NIE-art ul p{text-indent: 0;}
+/*列表*/#NIE-art ul li{font-size:12px;line-height: 20px;margin: 0;font-weight: normal;}
+/*图片*/#NIE-art img{margin:0}
+/*文字表格*/
+#NIE-art .table-txt{text-align: center;margin: 10px auto;}
+/*链接颜色*/
+#NIE-art a{color:#2e80b3}
+/*分页*/
+/* normal */#NIE-art .paging{}
+/* normal */#NIE-art .paging a i{}
+/* hover */#NIE-art .paging i,#NIE-art .paging a:hover i{}
+/*current*/#NIE-art .paging i{}
+
+/*文字表格*/
+#NIE-art .table-txt{}
+/* == 为了兼容旧table颜色，方便统一修改（可拆开使用）== */
+/*浅色背景色*/#NIE-art .table-txt{background-color:#d9d9d9;color: #222;font-size: 14px;}
+/*深色背景色*/#NIE-art .table-txt thead td{height: 30px;line-height:30px;background-color:#c4222e;color: #fff;font-weight: normal;}
+/*边框颜色*/#NIE-art .table-txt td,#NIE-art .table-pic td,.table3 td,.table4 td,.tablepad12 td,.tablepad td{border:0;border-bottom:1px #c2c2c2 dashed}
+
+/* === 发布系统 === */
+/*普通文字颜色*/#NIE-art{color:#333;}
+/*着重色1*/.red{color:#cc3300;}
+/*着重色1加粗*/.redb{color:#cc3300;font-weight:bold;}
+/*着重色2*/.blue{color:#1e50a2;}
+/*服务器名字*/.fuchsia{color:#ff00ff;}
+
+/* === 自定义额外的样式 === */
+#NIE-art .artText thead th.odd, #NIE-art .artText thead td.odd{background:#c4222e}
+#NIE-art .artText thead th, #NIE-art .artText thead td{background:#d52135}
+#NIE-art .artText tbody td.odd{background:#e2e2e2}
+#NIE-art .artTips{border:1px #c2c2c2 dashed;background:#e2e2e2;padding:10px 20px;margin:10px 0}
+#NIE-art .artInfo{text-align:left;color:#888;margin:5px 0}
+#NIE-art .paging a i{margin:0 1px;padding:2px 5px;color:#888;border:1px #c2c2c2 solid;background:#f1f1f1}
+#NIE-art .paging i, #NIE-art .paging a:hover i{color:#222;border:1px #c2c2c2 solid;background:#f1f1f1} 
+#NIE-art tbody td{border-bottom:1px #c2c2c2 dashed}
+#NIE-art .table-pic img{border:0}

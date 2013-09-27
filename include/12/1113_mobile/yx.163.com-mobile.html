@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>网易游戏手机验证特权区</title>
+<meta name="author" content="网易，NetEase Inc." />
+<meta name="copyright" content="网易，NetEase Inc." />
+<meta name="pmid" content="271662" />
+<meta name="editor" content="panda33,SX_E" />
+<meta name="designer" content="Charles" />
+<meta name="front-end technicist" content="Jaykon,CP-T" />
+<style type="text/css">
+@charset "gb2312";
+/* =s Reset (by YUI 3) */
+html { color:#000; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset, img { border:0; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal; }
+li { list-style:none; }
+caption, th { text-align:left; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal; }
+q:before, q:after { content:''; }
+abbr, acronym { border:0; font-variant:normal; }
+sup { vertical-align:text-top; }
+sub { vertical-align:text-bottom; }
+input, textarea, select { font-family:inherit; font-size:inherit; font-weight:inherit; }
+input, textarea, select { *font-size:100%;
+}
+legend { color:#000; }
+ul.nav li a span, ul.subnav li a span { transition:opacity .4s ease-in-out; -webkit-transition:opacity .4s ease-in-out; -moz-transition:opacity .4s ease-in-out; -o-transition:opacity .4s ease-in-out; -ms-transition:opacity .4s ease-in-out; }
+/* =e Reset */
+
+/* =s base */
+html, body { height:100%; }
+body { font-family:"Microsoft YaHei", simSun, Arial; font-size:12px; color:#000;background:none }
+i { font-style:normal; }
+a { color:#000;text-decoration:none;}
+a:hover { color:#F60;}
+a.under:link, a.under:active, a.under:visited, a.under:hover { text-decoration:underline; }
+/* 浮动 [flt加方向首个字母] */
+.fltL { float:left; }
+.fltR { float:right; }
+.fixR { position: absolute; top: 0px; right: 0px; }
+.setCenter { margin:0 auto; }
+/* clear [clr加值首个字母] */
+.clrB { clear:both; }
+.clrL { clear:left; }
+.clrR { clear:right; }
+.clrN { clear:none; }
+.g-clr { zoom: 1; }
+.g-clr:after { display: block; clear: both; height: 0; content: "\0020"; }
+/* =e base */
+
+/* =s Font */
+/* 字体重量 [首字母]*/
+.b { font-weight:bold; }
+.n { font-weight:normal; }
+/* 字体位置 [txt加方位首个字母] */
+.txtC { text-align:center; }
+/* 字缩进 [ti加缩进字数] */
+.ti0 { text-indent:0; }
+.ti2 { text-indent:2em; }
+.g-thide { text-indent: -9999px; }
+.tRed { color: #e71500; }
+/* =e Font */
+
+/* =s layout */
+/* 顶部导航 */
+/* 外套 */
+#wrap { max-width:1680px; min-width:960px; margin:0 auto; _width:expression((document.documentElement.clientWidth>1680||document.body.clientWidth>1680)?"1680px":"100%");
+}
+/* 外套背景图 */
+#wrap-bg { width:100%; }
+#wrap-bg { background: url(../images/bg.jpg) no-repeat center 0; }
+.public #wrap-bg { background-image: url(../images/pbg.jpg); background-position: center top; border-color: #e9f1ee; }
+/* 主体 */
+.main { position:relative; width:960px; margin:0 auto; }
+.bottomcont { width:100% }
+.topcont { height:419px; width:100% }
+.content { width: 414px; height: 264px; background: url(http://res.nie.netease.com/ipush/20121107/images/content.jpg) no-repeat; }
+.content h1 { font-size: 14px; color: #4c8500; font-weight: bold; margin: 18px 0 20px 27px; }
+.content h2 { font-size: 16px; color: #464646; font-weight: bold; margin: 0 0 18px 27px; }
+.content a { display: block; width: 370px; margin:6px 0 0 27px; color: #464646; }
+.content a:hover{color:#060;text-decoration:underline}
+.content a:hover .fltL{text-decoration:underline}
+.content a span { cursor: pointer; }
+.banner1 {position: absolute;right: 22px;top: 5px;}
+.banner2 {position: absolute;right: 22px;top: 160px;}
+/*公共页面*/
+.public .subnav { background:url(../images/psubnav.jpg) no-repeat; width:224px; height:506px; margin:2px 0 0 16px }
+.index .content {left: 0;position: absolute;top: 0;}
+.public .content { width: 695px; height:auto; padding-right:30px; background: none; margin:16px 0 0 244px }
+.public .content .conthead { width:100%; background: url(../images/conthead.jpg) no-repeat center top; height: 40px; padding-top: 18px; ; }
+.public .content .conthead h1 { margin-top: 0; }
+.public .content .contcenter { width:100%; background: url(../images/contbg.jpg) repeat-y center top; height: auto; min-height: 449px; }
+.public .content .contfoot { width: 100%; height: 20px; background: url(../images/contfoot.jpg) repeat-y center top; }
+.public .content img { display: block; background: #f6fdcb; border:1px solid #c8cea6; margin: 0 25px 10px 35px; }
+.public .content p, .public .content ul { width: 632px; margin-left: 30px; }
+.public .content p { text-indent: 28px; }
+.public .content ul li { font-size: 12px; font-weight: bold; margin-bottom: 24px; }
+.public .content ul li p { margin-left: 0; font-weight: normal; line-height: 22px; }
+.public .maintext { width: 444px; color: #4c8500; font-size:14px; float: left; line-height: 22px; }
+.public .maintext h3 { color: #4c8500; font-size:14px; font-weight: bold; margin: 0; }
+.public .content p.title { float: left; margin:20px 0 0 275px; _margin-left:100px; font-weight: bold; font-size: 14px; width: auto; }
+.public .content p.note { float: left; width:406px; text-align:center; margin:10px 0 0 160px; _margin-left:50px; font-size: 12px; }
+.public .imgshow { width: 640px; margin-left: 64px; }
+.public .imgshow a { display: block; width: 151px; height: 76px; background: #f6fdcb; border:1px solid #c8cea6; float: left; margin:0 60px 32px 0 }
+.public .imgshow img { margin: 0; border: 0; }
+.wraper {position: relative;width: 720px;}
+/* =e layout */
+</style>
+</head>
+<body id="wrap" class="index">
+<div class="wraper">
+	<div class="content">
+		<h1>最新特权活动</h1>
+			<h2><a href="http://allyes.nie.163.com/main/adfclick?db=afanie&bid=627228,312359,858&cid=46725,210,1&sid=625951&show=ignore&url=http://yx.163.com/mobile/2012/xyq/" target="_blank">《梦幻西游》手机验证送神兜兜、精美周边</a></h2>				
+
+      
+
+			<a href="http://allyes.nie.163.com/main/adfclick?db=afanie&bid=627226,312358,858&cid=46725,210,1&sid=625949&show=ignore&url=http://yx.163.com/mobile/2012/xy2/" class="g-clr" target="_blank"><span class="fltL">[新闻]</span><span class="fltL">《大话2》验证抽奖回归，神兽、龙涎丸带回家！</span><span class="fltR">[12/07]</span></a>
+			
+
+			<a href="http://dtws2.163.com/2012/jiang/6chong.html" class="g-clr" target="_blank"><span class="fltL">[新闻]</span><span class="fltL">《大唐无双2》短信召回老友，同享回归大奖</span><span class="fltR">[11/02]</span></a>
+			
+
+			<a href="http://wh.163.com/news/dxlr.html" class="g-clr" target="_blank"><span class="fltL">[新闻]</span><span class="fltL">《武魂》短信拉人活动开启　拉好友共赢大礼</span><span class="fltR">[11/01]</span></a>
+			
+
+			<a href="http://wh.163.com/news/2012/2/21/9227_264465.html" class="g-clr" target="_blank"><span class="fltL">[新闻]</span><span class="fltL">《武魂》轻松验证手机　海量经验礼相送</span><span class="fltR">[10/01]</span></a>
+			
+
+			<a href="http://zh.163.com/news/news/2012/9/21/9911_343497.html" class="g-clr" target="_blank"><span class="fltL">[新闻]</span><span class="fltL">《斩魂》手机验证 轻松方便更安全</span><span class="fltR">[09/20]</span></a>
+			
+      
+      
+      
+      
+      
+      
+      
+      
+      
+		
+	</div>
+	<div class="banner1">
+      
+		<a href="http://allyes.nie.163.com/main/adfclick?db=afanie&bid=627224,312357,858&cid=46725,210,1&sid=625947&show=ignore&url=http://yx.163.com/mobile/2012/xyq/" target="_blank"><img src="http://img.nie.163.com/images/2012/12/7/2012-12-07_217511.jpg" alt="梦幻"></a>
+      
+		
+	</div>
+	<div class="banner2">
+      
+		<a href="http://allyes.nie.163.com/main/adfclick?db=afanie&bid=627222,312356,858&cid=46725,210,1&sid=625945&show=ignore&url=http://yx.163.com/mobile/2012/xy2/" target="_blank"><img src="http://img.nie.163.com/images/2012/12/7/2012-12-07_217509.jpg" alt="大话2"></a>
+      
+	</div>
+</div>
+</body>
+</html>
