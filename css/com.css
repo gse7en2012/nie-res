@@ -48,11 +48,11 @@ body{margin:0}
 .slideBox{width:745px;height:325px;overflow:hidden;position:absolute;top:0}
 .slideBox ul{height:325px;width:3725px;text-decoration:none;list-style:none;position:absolute;left:0}
 .slideBox li{float:left}
-#prev{position:absolute;top:120px;left:0;z-index:10;width:50px;height:70px;display:block;cursor:pointer;display:none}
+#prev{position:absolute;top:120px;left:0;z-index:10;width:50px;height:70px;display:block;cursor:pointer;/*display:none*/}
 .prevBg{position:absolute;width:50px;height:70px;display:block;background:#000;vertical-align:middle;opacity: .5;filter: alpha(opacity=50);}
 #prev:hover a{opacity:1;filter:alpha(opacity=100);background:#d21b35}
 .prevIcon{position:absolute;top:20px;left:15px;display:block;width:20px;height:26px;background:url(../images/icon.png) 0 0 no-repeat;_background:url(../images/icon8.png) 0 0 no-repeat;cursor:pointer}
-#next{position:absolute;top:120px;right:0;z-index:10;width:50px;height:70px;display:block;cursor:pointer;display:none}
+#next{position:absolute;top:120px;right:0;z-index:10;width:50px;height:70px;display:block;cursor:pointer;/*display:none*/}
 .nextBg{position:absolute;width:50px;height:70px;display:block;background:#000;vertical-align:middle;opacity: .5;filter:alpha(opacity=50);}
 #next:hover a{opacity:1;filter:alpha(opacity=100);background:#d21b35}
 .nextIcon{position:absolute;top:20px;right:15px;display:block;width:20px;height:26px;background:url(../images/icon.png) -18px 0 no-repeat;_background:url(../images/icon8.png) -18px 0 no-repeat;cursor:pointer}
@@ -141,7 +141,7 @@ body{margin:0}
 @media all and (max-width: 1024px){
     #main{width: 100%;}
         .news{width: 100%;/*1000px*/background: #adadad;}
-            .picBox{width: 74.5%;/*745px*/}
+            .picBox{width: 74.5%;/*745px*/width: 71.5%;}
                 #slide{/*743px*/width: 99.73154%;}
                     .slideBox{width: 100.26918%;/*745px*/}
                         .slideBox ul{}
@@ -156,8 +156,10 @@ body{margin:0}
                             .NavOn .out{width: 100%}
                                    .out p,.on p{font-size: 12px;}
 
-        .newsList{width: 21.4%;/*214px*/padding:20px 2%;border-right:0;border-top:7px solid #C4222E;margin-top: 0; }
+        .newsList{width: 21.4%;/*214px*/padding:20px 2%;border-right:0;border-top:7px solid #C4222E;margin-top: 0;width: 24.4%; }
             .newsList .con{width: 98.13084%;/*210px*/}
+            .newsList .conF{font-size: 14px;}
+                .newsList .con li:last-child{display: none;}
                 .newsList .con a{width: 92.85714%;/*195px*/}
         .triangle{opacity: 0;transition:all ease-in-out .3s;}
 

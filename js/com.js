@@ -100,6 +100,7 @@ var nieCarousel=(function($){
         navList:'.slideNav a',
         autoPlay:true
     }
+    var current=0;
     var nieCarousel=function(box,options){
 
         this.options=$.extend({},defaultOptions,options);
@@ -107,18 +108,20 @@ var nieCarousel=(function($){
         this._$nav=$(this.options.navList);
         this._num=this._$children.length;
         this._current=(this._num-1)%this._num;
-        console.log(this._$children.length,$('.slideBox a').length);
+        console.log(this._num);
+        console.log(this);
         this.init();
     }
     nieCarousel.prototype.initNext=function(){
         var self=this;
+        var num=self._$children.length;
+        console.log(this,num)
         var $ele=$(self.options.nextBtn);
-        $('body').click(function(){
-
-            self._$children.eq(self._current).animate({
+        $ele.click(function(){
+            self._$children.eq(current%num).animate({
                 left:'-100%'
             })
-            self._current++;
+            console.log(current++%num)
         })
     }
     nieCarousel.prototype.initNav=function(){
@@ -133,15 +136,25 @@ var nieCarousel=(function($){
 
     }
     nieCarousel.prototype.init=function(){
+        var self=this;
+        this._$children.each(function(){
+             $(this).css({
+                 'z-index':self._num--
+             })
+        })
          this.initNext();
+        console.log('init');
 
     }
     return nieCarousel;
 })(jQuery);
+
 $(function(){
+
     var carousel=new nieCarousel('.slideBox',{
         children:'.slideBox a',
         nextBtn:'.nextBg'
     });
+
 })
 
